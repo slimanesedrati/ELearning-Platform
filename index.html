@@ -1,57 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Learning Platform</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ELearning Platform</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <!-- Header -->
     <section class="header">
-        <div class="overlay show">
+      <div class="overlay show"></div>
+      <div class="container">
+        <span id="hamburger" class="">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <div class="nav">
+          <div class="logo">
+            <a href=""> GlobalTalk </a>
+          </div>
+          <ul class="nav-list show">
+            <li class="act"><a href="#">Main</a></li>
+            <li><a href="#">Guide</a></li>
+            <li><a href="#">Statistics</a></li>
+            <li>
+              <a href="#"
+                >Games <i id="down" class="fa-solid fa-chevron-down"></i
+              ></a>
+            </li>
+            <li class="opt op1 active"><a href="#">Sprint</a></li>
+            <li class="opt op2 active"><a href="#">Audio-call</a></li>
+          </ul>
         </div>
-        <div class="container">
-            <span id="hamburger" class="">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
-            <div class="nav">
-                <div class="logo">
-                    <a href="">
-                        GlobalTalk
-                    </a>
-                </div>
-                <ul class="nav-list show">
-                    <li class="act"><a href="#" >Main</a></li>
-                    <li><a href="#" >Guide</a></li>
-                    <li><a href="#" >Statistics</a></li>
-                    <li><a href="#" >Games <i id="down" class="fa-solid fa-chevron-down"></i></a></li>
-                    <li class="opt op1 active"><a href="#" >Sprint</a></li>
-                    <li class="opt op2 active"><a href="#" >Audio-call</a></li>
-                </ul>
-            </div>
-            <div class="compte">
-                <div class="profile">
-                    <span>Slimane <i class="fa-solid fa-chevron-down"></i></span>
-                </div>
-                <!-- <div class="reg">
+        <div class="compte">
+          <div class="profile">
+            <span>Slimane <i class="fa-solid fa-chevron-down"></i></span>
+          </div>
+          <!-- <div class="reg">
                     <button>Login</button>
                     <button>Sign up</button>
                 </div> -->
-            </div>
         </div>
+      </div>
     </section>
     <!-- Hero Section -->
     <section class="hero">
-        
+      <div class="container">
+        <div class="content">
+          <div class="content-title">E-COURSE PLATFORM</div>
+          <h1>Learning and teaching online, made easy.</h1>
+          <p>Practice and learn new things with the platform.</p>
+          <div class="aboutp-btn">
+            <a href="">About platform</a>
+          </div>
+          <div class="stat">
+            <div class="pop-w">
+              <div>
+                <img src="images/vector.svg" alt="" />
+                <span>600<span class="plus">+</span> </span>
+              </div>
+              <div class="title">Popular words</div>
+            </div>
+            <div class="line"></div>
+            <div class="mini-gam">
+              <div>
+                <img src="images/hug.svg" alt="" />
+                <span>2<span class="plus">+</span> </span>
+              </div>
+              <div class="title">Mini-games</div>
+            </div>
+          </div>
+        </div>
+        <div class="pics">
+          <img src="images/boybook.png" alt="" />
+          <img src="images/image 6.png" alt="" />
+          <div class="image12">
+            <img src="images/image 12.svg" alt="" />
+          </div>
+        </div>
+      </div>
     </section>
-    
-    <script src="script.js">
+    <section class="learn-lang">
+      <div class="container">
+        <div class="image">
+          <img src="images/image 8.png" alt="" />
+        </div>
+        <div class="content">
+          <h2>Learn a language in a playful way</h2>
+          <p>Make learning words more fun with mini-games</p>
+          <div class="cards">
+            <div class="card sprint">
+              <img src="images/image 10.svg" alt="" />
+              <a href="">Sprint →</a>
+            </div>
+            <div class="card audiocall">
+              <img src="images/Group 9.png" alt="" />
+              <a href="">Audio-call →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- vocabulary section -->
+    <section class="vocabulary learn-lang">
+      <div class="container">
+        <div class="content">
+          <h2>Increase your vocabulary</h2>
+          <p>Traditional and new effective approaches to word study</p>
+          <div class="textbook">
+            <a href="">
+              Textbook →
+            </a>
+          </div>
+        </div>
+        <div class="image">
+          <img src="images/image 2.png" alt="" />
+        </div>
+      </div>
+    </section>
 
-    </script>
-</body>
+
+    <script src="script.js"></script>
+  </body>
+  <script src="script.js"></script>
 </html>

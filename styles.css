@@ -8,10 +8,11 @@
 
 :root {
     --main-color : #000000;
-    --grey-dark: #757575;
+    --grey-dark: #585858;
     --cyan-dark : #2B788B;
     --cyan-light : #C3DCE3;
     --gray-light:#D9D9D9;
+    --primaty-color:#F6F5F4;
 }
 
 html {
@@ -20,7 +21,6 @@ html {
 
 body {
     font-family: 'Montserrat', 'Dela Gothic One' , sans-serif;
-    background-color: #F6F5F4;
 }
 
 ul {
@@ -62,6 +62,10 @@ a {
     box-shadow: inset 0px -1px 0px #E0E0E0;
     padding: 18px 20px;
     position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--primaty-color);
 }
 .header .container {
     display: flex;
@@ -102,14 +106,15 @@ a {
 }
 @media (max-width : 768px) {
     #hamburger.active span:nth-child(1) {
-        transform: rotate(45deg)translateX(4px) translateY(3px); ;
+        width: 100%;
+        transform: rotate(45deg)translateX(6px) translateY(-2px);
     }
     #hamburger.active span:nth-child(2) {
         display: none;
     }
     #hamburger.active span:nth-child(3) {
         width: 100%;
-        transform:rotate(-45deg) translateX(0px) translateY(1px)
+        transform: rotate(-45deg) translateX(5px) translateY(2px);
     }
 }
 .header .container .nav {
@@ -262,3 +267,365 @@ a {
 }
 
 /* Hero Section */
+
+.hero {
+    overflow: hidden;
+    background-color: var(--primaty-color);
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(100vh - 60px);
+}
+
+
+.hero .container .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.hero .container .content-title {
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--cyan-dark);
+    margin-top: 25px;
+}
+
+.hero .container .content h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Dela Gothic One";
+    width: 335px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+@media (min-width:768px) {
+    .hero .container {
+        flex-direction: row;
+    }
+    .hero .container .content {
+        align-items: flex-start;
+        width: 600px;
+    }
+    .hero .container .content h1 {
+        font-size: 45px;
+        text-align: unset;
+        width: 100%;
+    }
+    .hero .container .content p {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+.hero .container .content p {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--grey-dark);
+    margin-bottom: 15px;   
+}
+
+.aboutp-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+
+.aboutp-btn a {
+    color: var(--cyan-dark);
+    padding: 12px 20px;
+    border-radius: 7px;
+    background-color: var(--cyan-light);
+    font-size: 14px;
+    font-weight: 700;
+    margin: 1rem 0;
+    outline: none;
+}
+
+.stat {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+}
+
+.stat .line {
+    width: 2px;
+    height: 35px;
+    background-color: var(--gray-light);
+}
+
+.pop-w {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pop-w img {
+    width: 15px;
+}
+
+.pop-w div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-w .title {
+    font-size: 12px;
+    font-weight: 400;
+    color: #585858;
+}
+
+.pop-w div span {
+    font-family: 'Dela Gothic One';
+    font-size: 20px;
+}
+.pop-w div span .plus {
+    color: var(--cyan-dark);
+}
+
+.mini-gam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mini-gam img {
+    width: 15px;
+}
+
+.mini-gam div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini-gam div span {
+    font-family: 'Dela Gothic One';
+    font-size: 20px;
+}
+
+.mini-gam .title {
+    font-size: 12px;
+    font-weight: 400;
+    color: #585858;
+}
+
+.mini-gam div span .plus {
+    color: var(--cyan-dark);
+}
+
+.pics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 600px;
+}
+
+.pics img:first-child {
+    width: 18rem;
+}
+
+.pics img:nth-child(2) {
+    display: none;
+}
+
+.pics .image12 img {
+    max-width: 18rem;
+    position: absolute;
+    right: -9rem;
+    bottom: 3rem;
+}
+
+
+
+@media (min-width:768px) {
+    .pics {
+        width: 700px;
+    }
+    .pics img:first-child {
+        max-width: 100%;
+        width: 500px;
+    }
+    .pics img:nth-child(2){
+        position: absolute;
+        display: block;
+        left: 0;
+        width: 140px;
+    }
+    .pics .image12 {
+        overflow: hidden;
+    }
+    .pics .image12 img{
+        width: 500px;
+        position: absolute;
+        right: -190px;
+        bottom: -15px;
+    }
+    .stat {
+        justify-content: space-between;
+        width: 300px;
+    }
+
+}
+
+/* section lang" */
+
+.learn-lang {
+    margin-top: 40px;
+}
+
+.learn-lang .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.learn-lang .container .image img {
+    width: 335px;
+}
+
+.learn-lang .container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.learn-lang .container .content h2 {
+    font-size: 24px;
+    font-family: "Dela Gothic One";
+    padding: 10px 40px ;
+    text-align: center;
+}
+
+.learn-lang .container .content  p {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--grey-dark);
+}
+
+.learn-lang .container .content .cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 350px;
+    align-items: flex-end;
+}
+
+.learn-lang .container .content .cards .card {
+    display: flex;
+    align-items: flex-end;
+    padding: 15px;
+    justify-content: center;
+    position: relative;
+    border-radius: 14px;
+}
+
+.sprint {
+    background-color: #F2D4DC;
+    width: 114px;
+    height: 112px;
+}
+
+.sprint a {
+    color: #945069;
+}
+
+.audiocall {
+    background-color: var(--cyan-light);
+    width: 172px;
+    height: 145px;
+}
+
+.audiocall a {
+    color: var(--cyan-dark);
+}
+
+.learn-lang .container .content .cards .card img {
+    position: absolute;
+    top: -30px;
+    transition: transform 0.3s;
+}
+
+.learn-lang .container .content .cards .card img:hover {
+    transform: scale(1.1);
+}
+
+@media (min-width:768px) {
+    .learn-lang .container {
+        flex-direction: row;
+    }
+    .learn-lang .container .content {
+        max-width: 550px;
+    }
+    .learn-lang .container .image {
+        max-width: 600px;
+    }
+    .learn-lang .container .image img  {
+        width: 100%;
+    }
+    .learn-lang .container .content h2 {
+        font-size: 48px;
+        padding: 0;
+        padding-right: 50px;
+        padding-bottom: 20px;
+        text-align: left;
+    }
+    .learn-lang .container .content  p {
+        font-size: 18px;
+        width: 400px;
+    }
+    .learn-lang .container .content {
+        align-items: flex-start;
+    }
+}
+
+/* vocabulary section */
+
+.vocabulary.learn-lang {
+    background-color: var(--primaty-color);
+}
+
+.textbook {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textbook a {
+    padding: 12px 20px;
+    background-color: var(--cyan-light);
+    color: var(--cyan-dark);
+    border-radius: 100px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+}
+
+.vocabulary .container .content p {
+    text-align: center;
+}
+
+@media (min-width:768px) {
+    .vocabulary .container .content p {
+        text-align: center;
+    }
+}
