@@ -331,9 +331,8 @@ a {
 }
 
 .aboutp-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
+    margin: 1rem 0;
 }
 
 
@@ -345,7 +344,6 @@ a {
     background-color: var(--cyan-light);
     font-size: 14px;
     font-weight: 700;
-    margin: 1rem 0;
     outline: none;
     display: inline-block;
 }
@@ -433,7 +431,7 @@ a {
 }
 
 .pics img:first-child {
-    width: 18rem;
+    width: 13rem;
 }
 
 .pics img:nth-child(2) {
